@@ -1,0 +1,35 @@
+/* Mobilt läge 
+-------------------------------------------------------------------*/
+#footer {
+	background-color: $head;
+	border-top: 1px solid #ccc;
+	box-shadow: 0 0 3px #ccc;
+	height: 100px;
+	line-height: 50px;
+	text-align: center;
+	.left-foot {
+		a {
+			color: $grey;
+			.fa {
+				font-size: 20px;
+				margin: 0 10px;
+
+			}
+			&:hover {
+				color: $link;
+			}
+		}
+	}
+	.right-foot {
+		float: right;
+		
+	}
+}
+
+/* Desktopläge sm+
+-------------------------------------------------------------------*/
+@media ( min-width: 768px ){
+	#footer {
+		height: 50px;
+	}
+} 

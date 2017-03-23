@@ -1,0 +1,67 @@
+/* Mobilt läge 
+-------------------------------------------------------------------*/
+#header {
+
+	height: 80px;
+	background-color: $head;
+	border-bottom: 1px solid $grey;
+	box-shadow: 0 0 3px $grey;
+
+	.icons {
+		line-height: 80px;
+		float:right;
+		font-size: 30px;
+		color: $black;
+		&:active {
+			color: $ghost-link;
+		}
+
+		.fa-times {
+			display: none;
+		}
+	}
+
+	.icon {
+		line-height: 80px;
+		font-size: 30px;
+		color: $black;
+		&:active {
+			color: $ghost-link;
+		}
+
+	}
+
+	.logotype {
+		line-height: 80px;
+		height: 80px;
+		width: 80px;
+		margin: 0 auto;
+
+		img {
+			max-width: 100%;
+		}
+	}
+}
+
+/* Desktopläge md+
+-------------------------------------------------------------------*/
+@media ( min-width: 992px ){
+	#header {
+		height: 170px;
+		background-color: $head;
+		box-shadow: 0 0 2px #ccc;
+
+		.logotype {
+			height: 120px;
+			width: 120px;
+			line-height: 80px;
+			margin: 0 auto;
+			margin-top: 10px;
+			border-bottom: 1px solid #ccc;
+
+			img {
+				max-width: 100%;
+			}
+		}
+	}
+} 

@@ -1,0 +1,132 @@
+body {
+	overflow-x: hidden;
+	font: {
+		family: $lato;
+		weight: 300;
+		size: 18px;
+	}
+}
+
+h1, h2, h3, h4, p, a, i {
+	margin: 0;
+}
+
+a {
+	color: $link;
+}
+
+.mb-10 { margin-bottom: 10px; }
+.mb-20 { margin-bottom: 20px; }
+.mb-40 { margin-bottom: 40px; }
+.mb-60 { margin-bottom: 60px; }
+.mt-20 { margin-top: 20px; }
+.mt-40 { margin-top: 40px; }
+
+.align-right { text-align: right; }
+
+.fixed { position: fixed; }
+
+.button, #searchsubmit {
+	border: 1px solid $black;
+	padding: 5px 10px;
+	box-shadow: 0 0 2px #333, 0 0 3px #eee;
+	text-transform: uppercase;
+	font-weight: 400;
+	font-size: 14px;
+	background-color: $black;
+	color: $white;
+	a{
+		color: $white;
+	}
+
+	&:hover {
+		color: $black;
+		background-color: $head;
+		text-decoration: none;
+		a {
+			color: $black;
+			text-decoration: none;
+		}
+	}
+}
+
+
+table {
+	margin: 0 auto;
+	td, th {
+		border-bottom: 1px solid $light;
+		&:first-of-type {
+			padding-right: 20px;
+		}
+		&:nth-child(2) {
+			padding-left: 20px;
+		}
+	}
+}
+
+.ghost {background-color: $ghost-link;}
+.white {background-color: $white;}
+.grey {background-color: $light}
+
+.text-black { color: $black!important; }
+.text-white { color: $white!important; }
+
+.none {
+	padding: 150px 0;
+	background-color: $head;
+	box-shadow: 0 0 1px $grey, 0 0 2px $light;
+	border: 1px solid $grey;
+}
+
+.breaker {
+	border-top: 1px solid $grey;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+iframe {
+	height: 250px;
+	width: 100%;
+}
+
+.archive-lawyer {
+	text-transform: uppercase;
+	font-weight: 300;
+	font-size: 30px;
+	&.small {
+		font-size: 20px;
+	}
+	&.tiny {
+		font-size: 12px;
+	}
+}
+
+.inline { display: inline; }
+.bold {font-weight: 400;}
+.ws { word-spacing: 10px; }
+
+
+.search-box {
+	border: 1px solid $grey;
+	padding: 20px;
+	margin-bottom: 10px;
+	box-shadow: 0 0 1px $grey, 0 0 2px $light;
+	background-color: $head;
+}
+
+
+
+/* Desktop sm+
+---------------------------------------------------*/
+@media (min-width: 768px) {
+
+}
+
+/* Desktop md+
+---------------------------------------------------*/
+@media (min-width: 992px) {
+
+}

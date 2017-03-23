@@ -1,0 +1,106 @@
+/* Mobilt läge 
+-------------------------------------------------------------------*/
+.main-menu {
+	display: none;
+	.menu {
+		list-style: none;
+		.menu-item {
+			a {
+				text-decoration: none;
+				color: $black;
+
+				&:active {
+					color: $link;
+				}
+			}
+		}
+		.current-menu-item {
+			font-weight: bold;
+		}
+		.sub-menu {
+			//display: none;
+			z-index: 9999;
+			list-style: none;
+			padding: 0;
+			text-align: center;
+			background-color: $light;
+			li {
+				font-weight: 300;
+				float:none;
+				&.current-menu-item {
+					font-weight: bold;
+				}
+			}
+		}
+	}
+}
+
+.navigation {
+	.nav-links {
+		.page-numbers {
+			background-color: $ghost-link;
+			padding: 5px 10px;
+			margin: 0 5px;
+			display: inline-block;
+			&:hover {
+				background-color: $link;
+				a{
+					text-decoration: none;
+					color: $dark-link;
+				}
+			}
+		}
+	}
+}
+/* Desktopläge md+
+-------------------------------------------------------------------*/
+@media ( min-width: 992px ) {
+	.main-menu {
+		display: block;
+		.menu {
+			list-style: none;
+			display: table;
+			margin: 0 auto;
+			.menu-item {
+				float: left;
+				margin: 0 20px;
+				line-height: 40px;
+				a{
+					 
+					&:hover {
+						color: $link;
+					}
+				}
+				&:hover {
+					.sub-menu {
+						display: block !important;
+					}
+				}
+			}
+
+			.current-menu-item {
+				font-weight: bold;
+			}
+			.sub-menu {
+				display: none;
+				position: absolute;
+				z-index: 9999;
+				list-style: none;
+				padding: 0;
+				text-align: left;
+				background-color: $light;
+				padding:10px;
+				margin-left: -15px;
+				box-shadow: 0 0 1px $grey;
+				border-bottom: 2px solid $black;
+				li {
+					margin:0;
+					float:none;
+					&.current-menu-item {
+						font-weight: bold;
+					}
+				}
+			}
+		}
+	}
+}

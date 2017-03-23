@@ -1,0 +1,49 @@
+.new-question {
+	#post {
+		.acf-field {
+			.acf-label {
+				margin: 0;
+				label {	
+					font: {
+						weight: normal;
+						size: 20px;
+					}
+				}
+			}
+			.acf-input {
+				textarea {
+					border-radius: 10px;
+
+					&:active, &:focus {
+						outline: none;
+					}
+				}
+			}
+		}
+		.acf-form-submit {
+			margin: 0 auto;
+			text-align: center;
+			.acf-button {
+				border: 1px solid $black;
+				padding: 5px 10px;
+				box-shadow: 0 0 2px #333, 0 0 3px #eee;
+				text-transform: uppercase;
+				font-weight: 400;
+				font-size: 14px;
+				background-color: $black;
+				color: $white;
+
+				&:hover {
+					color: $black;
+					background-color: $head;
+					text-decoration: none;
+				}
+			}
+		}
+	}
+
+	#message.updated {
+		display: none;
+	}
+}
+

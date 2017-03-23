@@ -1,0 +1,13 @@
+.news-sidebar {
+	margin-bottom: 10px;
+	box-shadow: 0 0 1px $grey, 0 0 2px $light;
+	padding: 20px;
+	background-color: $head;
+	border: 1px solid $grey;
+	ul {
+		list-style: none;
+		li {
+			padding-left: 10px;
+		}
+	}
+}
